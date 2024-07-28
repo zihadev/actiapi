@@ -1,9 +1,13 @@
 import os
 import streamlit as st
+from dotenv import load_dotenv
 import main_api
 
+# Load environment variables from .env file
+load_dotenv()
+
 # Fetch the password from environment variable
-password = st.secrets["general"]["STREAMLIT_PASSWORD"]
+password = os.getenv('STREAMLIT_PASSWORD')
 
 # Create a simple password authentication
 def check_password():
