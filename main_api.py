@@ -16,6 +16,5 @@ def run():
     request = requests.get(URL_PRODUCTS+'1')
     content = request.json()
     print(list(content)[2])
-    # content = request.text
 
 
