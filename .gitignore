@@ -3,3 +3,4 @@
 .idea
 /.streamlit/secrets.toml
 /.streamlit/
+/.devcontainer/
