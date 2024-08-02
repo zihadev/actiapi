@@ -4,10 +4,9 @@ import requests
 import streamlit as st
 
 ACTIAPI = os.getenv('ZH_ACTIAPI')
-
-URL_ACTI = f"http://apidata.acti.pl/toc?token={ACTIAPI}"
-URL_PRODUCTS = "http://apidata.acti.pl/products/"
-URL_PRODUCT = "http://apidata.acti.pl/product/"
+URL_ACTI = st.secrets["general"]["URL_ACTI"] + ACTIAPI
+URL_PRODUCTS = st.secrets["general"]["URL_PRODUCTS"]
+URL_PRODUCT = st.secrets["general"]["URL_PRODUCT"]
 
 
 def run():
